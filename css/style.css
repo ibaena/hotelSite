@@ -1,41 +1,75 @@
 body{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 2000px;
 }
 
-.logo{
-  width: 100px;
-  height: 50px;
-  position: relative;
-  left: 100px;
-  display: inline-block;
- 
+.locations {
+  text-align: center;
 }
 
-.col-vertical {
-  display: inline-block;
-  position: relative;
-  left: 200px;
-  vertical-align: middle;
+.searchbar {
+  margin-top: 50px;
 }
 
-.col-vertical a {
-  margin-left: 20px;
-}
-.loginBtn {
-  display: inline-block;
-  position: relative;
-  left: 600px;
-  vertical-align: middle;
+#subhead {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-.menuSelect {
-  display: inline-block;
-  position: relative;
-  left: 620px;
-  vertical-align: middle;
+.recommendation {
+  margin-bottom: 175px;
+  margin-top: 50px;
 }
 
-.fourSquare {
-  width: 19px;
-  height: 19px;
+#nav-scroller{
+  transition: all 0.5s;
+  height: 70px;
+}
+
+#nav-links a{
+  transition: all 0.5s;
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+#nav-scroller a{
+  font-size: 2.4em;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
+#head-images{
+  height: 45%;
+  background: #2EECDC;
+  padding-top: 100px;
+  background: url("../img/hotelbed_comp.jpg") no-repeat;
+  background-size: cover;
+  transition: all 3s;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px){
+  #head-images{
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  #head-images{
+    height: 27%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #head-images{
+    height: 23%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #head-images{
+    height: 17%;
+  }
 }
