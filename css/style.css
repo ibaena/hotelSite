@@ -3,6 +3,19 @@ body{
   height: 2000px;
 }
 
+.locations {
+  text-align: center;
+}
+
+#subhead {
+  text-align: center;
+}
+
+.recommendation {
+  margin-bottom: 175px;
+  margin-top: 50px;
+}
+
 #nav-scroller{
   transition: all 0.5s;
   height: 70px;
