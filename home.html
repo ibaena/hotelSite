@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
   <title>GetARoom</title>
+  <meta charset="utf-8">
   <meta name="description" content="Get A Room">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -13,13 +14,40 @@
 </head>
 
 <body>
- <div class="container-fluid"> <!--start container-->
 
   <!-- TODO Nav Section -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">  
 
+      <div id="nav-scroller" class="navbar-header">
+        <a href="#" class="navbar-brand">Hotel Site</a>
+        <button id="nav-toggle-button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-links">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      
+      <div id="nav-links" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <a href="#">Sign Up</a>
+              </li>
+            </ul>
+      </div>  
+      
+    </div>
+  </div>
 
   <!-- TODO Header Section -->
     
+
+  <div id="head-images" class="container-fluid">
+
+  </div>
 
   <!-- TODO destination input / check in input / check out input -->
 
@@ -35,8 +63,6 @@
 
   <!-- TODO Modals for each hotel, including an ignore button that closes modal and removes hotel from list -->
 
-
-</div> <!--end of container-->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
