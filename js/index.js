@@ -25,7 +25,7 @@ $(document).ready(function(){
 
  	// TIMED IMAGE CHANGE FUNCTION
  	function imageChanger(){
- 		var imgList = ['underground', 'spain'];
+ 		var imgList = ['underground', 'spain_comp'];
  		var img = 0;
 
  		setInterval(function(){
