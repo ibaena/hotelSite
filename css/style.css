@@ -8,6 +8,12 @@ body{
   height: 100px;
 }
 
+#nav-scroller a{
+  font-size: 2em;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
 #head-images{
   height: 700px;
   background: #2EECDC;
