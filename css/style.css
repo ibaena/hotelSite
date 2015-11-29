@@ -11,6 +11,9 @@ body{
   margin-top: 50px;
   clear: both;
 }
+.dropdown-menu {
+  text-align: center;
+}
 
 #subhead {
   text-align: center;
