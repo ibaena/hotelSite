@@ -5,7 +5,7 @@ body{
 
 #nav-scroller{
   transition: all 0.5s;
-  height: 100px;
+  height: 70px;
 }
 
 #nav-links a{
@@ -21,7 +21,10 @@ body{
 }
 
 #head-images{
-  height: 700px;
+  height: 45%;
   background: #2EECDC;
   padding-top: 100px;
+  background: url("../img/spain_comp.jpg") no-repeat;
+  background-size: cover;
+  transition: all 3s;
 }
