@@ -44,3 +44,29 @@ body{
   background-size: cover;
   transition: all 3s;
 }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px){
+  #head-images{
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 992px){
+  #head-images{
+    height: 27%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  #head-images{
+    height: 23%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #head-images{
+    height: 17%;
+  }
+}
