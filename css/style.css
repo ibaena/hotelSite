@@ -1,8 +1,16 @@
 body{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 1500px;
 }
 
-.logo{
+#nav-scroller{
+  transition: all 2s;
+  height: 100px;
+}
+
+/*Ivan's CSS from before*/
+
+/*.logo{
   width: 100px;
   height: 50px;
   position: relative;
@@ -38,4 +46,4 @@ body{
 .fourSquare {
   width: 19px;
   height: 19px;
-}
+}*/
