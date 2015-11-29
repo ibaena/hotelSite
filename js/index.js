@@ -38,7 +38,7 @@ $(document).ready(function(){
 	 			$('#head-images').css('background-size', 'cover');
 	 		}
 	 		img++;
- 		}, 3000);
+ 		}, 10000);
 
  	}
 

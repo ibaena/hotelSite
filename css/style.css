@@ -25,5 +25,6 @@ body{
   background: #2EECDC;
   padding-top: 100px;
   background: url("../img/spain_comp.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  transition: all 3s;
 }
