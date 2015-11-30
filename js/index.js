@@ -44,17 +44,10 @@ $(document).ready(function(){
 	// SEARCH BAR FUNCTION
 	function searchInput(){
 		var searchInp = $('#search');
-		var checkin = $('#checkin-input');
-		var checkout = $('#checkout-input');
 		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-
-			if(!searchInp.val() || !checkout.val() || !checkin.val()){
-				alert('enter correct fields');
-				return;
-			}
 
 			for(var i=0; i<citiesArray.length; i++){
 				if(searchInp.val().toLowerCase() == citiesArray[i]){
@@ -87,11 +80,27 @@ $(document).ready(function(){
 	//Pick a date plugin
 	$(function() {
    var options = Date();
-		$('.calendar').pickadate({
+		$('#checkin-input').pickadate({
   		min: new Date(options)
-		})
+  	})
+		$('#checkout-input').pickadate({
+			min: new Date(options)
+	})
+		$('.submit').click(function() {
+        var checkin = $('#checkin-input').val();
+        var checkout = $('#checkout-input').val();
+        if (checkin > checkout) {
+            alert("Error. You can not return before your departure date.");
+        } else {
+            alert("Have fun on your trip!");
+        }
+    });
+
+  	
   });
 
+
+   
 //modal ingnore button
 $(".modal-footer").on("click", ".btn-danger", function() {
     $('.paris-hotel').remove();
