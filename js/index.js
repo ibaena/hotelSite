@@ -43,13 +43,23 @@ $(document).ready(function(){
 
 	// SEARCH BAR FUNCTION
 	function searchInput(){
+		var searchInp = $('#search');
+		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-			$('#hotel-list-area').fadeIn(200, function() {
-				$(this).css('display', 'initial');
-				$('#hotel-list-title').css('display', 'initial');
+			$('#hotel-list-area').fadeIn(500, function() {
+				$(this).css('display', 'block');	
 			});
+
+			$('#hotel-list-title').fadeIn(500, function() {
+				$(this).css('display', 'block');	
+			});
+			
+			$('.hotel').fadeIn(1000, function() {
+				$(this).css('display', 'block');	
+			});
+
 		});
 	}
 
