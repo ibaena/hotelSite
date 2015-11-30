@@ -128,26 +128,26 @@ body{
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1200px){
-  #head-images{
-    height: 35%;
-  }
-}
-
-@media screen and (max-width: 992px){
+@media screen and (min-width: 992px){
   #head-images{
     height: 27%;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 991px){
   #head-images{
-    height: 23%;
+    height: 25%;
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (min-width: 480px) and (max-width: 767px){
   #head-images{
-    height: 17%;
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 479px){
+  #head-images{
+    height: 20%;
   }
 }
