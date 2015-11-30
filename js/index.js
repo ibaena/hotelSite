@@ -49,6 +49,11 @@ $(document).ready(function(){
 		$('#search-button').click(function(e) {
 			e.preventDefault();
 
+			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
+				// alert('enter correct fields');
+				// return;
+			// }
+
 			for(var i=0; i<citiesArray.length; i++){
 				if(searchInp.val().toLowerCase() == citiesArray[i]){
 					$('#hotel-list-area').fadeIn(500, function() {
@@ -72,6 +77,16 @@ $(document).ready(function(){
 
 	// ========= MODAL SECTION ==============
 
+	// MAIN MODAL FUNCTION
+	function mainModal(){
+		$('.hotel').each(function() {
+			$(this).click(function(event) {
+				$(this).attr('data-target', '#main-modal');
+				$('#modal-title').text($(this).find('h3').text());
+			});
+		});
+	}
+
 	// USER SLIDE
 	$('.modal-hotel-reviews').click(function(event) {
 		$(this).parent().parent().next().slideToggle(400);
@@ -86,19 +101,7 @@ $(document).ready(function(){
 		$('#checkout-input').pickadate({
 			min: new Date(options)
 	})
-		$('.submit').click(function() {
-        var checkin = $('#checkin-input').val();
-        var checkout = $('#checkout-input').val();
-        if (checkin > checkout) {
-            alert("Error. You can not return before your departure date.");
-        } else {
-            alert("Have fun on your trip!");
-        }
-    });
-
-  	
-  });
-
+		
 
    
 //modal ingnore button
@@ -120,4 +123,5 @@ $("#search").easyAutocomplete(options);
  	navScrollResize();
  	imageChanger();
  	searchInput();
+ 	mainModal();
 });
