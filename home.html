@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="css/classic.css">
   <link rel="stylesheet" type="text/css" href="css/classic.date.css">
   <link rel="stylesheet" type="text/css" href="css/classic.time.css">
+  <link rel="stylesheet" type="text/css" href="css/easy-autocomplete.css">
+  <link rel="stylesheet" type="text/css" href="css/easy-autocomplete.themes.css">
 </head>
 
 <body>
@@ -45,18 +47,26 @@
     </div>
   </div>
 
-  <!-- Header Section -->
+ 
 
   <!-- Image changer -->
-  <div id="head-images" class="container-fluid"></div>
+  <div id="head-images" class="container-fluid">
+  <!-- Header Section -->
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1 id="brand">Make Your Dream Vacation A Reality</h1>
+    </div>
+  </div>
+  </div>
+  
 
   <!-- TODO destination input / check in input / check out 
   input -->
   <div class="container-fluid">
   <div class="row">
-    <form class="form-group searchbar">
+    <form class="form-group searchbar ">
       <div class="col-sm-4 col-sm-offset-1">
-        <input type="text" class="form-control" id="search" 
+        <input type="text" class="form-control form-group" id="search" 
         placeholder="Where do you want to go?">
       </div>
       <div class="col-sm-2">
@@ -310,6 +320,7 @@
   <!-- TODO Modals for each hotel, including an ignore button that closes modal and removes hotel from list -->
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.easy-autocomplete.js"></script>
   <script src="js/picker.js"></script>
   <script src="js/picker.date.js"></script>
   <script src="js/picker.time.js"></script>

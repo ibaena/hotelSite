@@ -132,6 +132,19 @@ body{
   display: none;
 }
 
+#brand {
+  margin-top: 170px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  padding: 10px; background-color: black; border-radius: 5px;
+  opacity: 0.5;
+
+
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 992px){
@@ -168,4 +181,10 @@ body{
   #head-images{
     height: 20%;
   }
+}
+
+@media only screen and (max-width: 479px) {
+    #brand {
+        display: none;
+    }
 }
