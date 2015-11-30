@@ -61,14 +61,9 @@ $(document).ready(function(){
 						$(this).css('display', 'block');	
 					});
 			
-					$('.hotel').each(function() {
-						if($(this).parent().hasClass(citiesArray[i])){
-							$(this).fadeIn(2000, function() {
-								$(this).css('display', 'block');	
-							});
-						}
+					$('.hotel').fadeIn(2000, function() {
+						$(this).css('display', 'block');	
 					});
-					
 				}
 			}
 
