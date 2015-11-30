@@ -11,6 +11,8 @@
 
   <!--css-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -52,10 +54,11 @@
   <div class="container-fluid">
   <div class="row">
     <form class="form-group searchbar">
-      <div class="col-sm-4 col-sm-offset-1">
-        <input type="text" class="form-control" id="search" 
+      <div class="col-sm-4 col-sm-offset-1 default-suggestions">
+        <input type="text" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required
         placeholder="Where do you want to go?">
       </div>
+      <div id="tipue_search_content"></div>
       <div class="col-sm-2">
         <input type="date" class="form-control calendar" placeholder="Check In">
       </div>
@@ -150,7 +153,9 @@
   <!-- TODO Modals for each hotel, including an ignore button that closes modal and removes hotel from list -->
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script src="tipuesearch/tipuesearch_content.js"></script>
+  <script src="tipuesearch/tipuesearch_set.js"></script>
+  <script src="tipuesearch/tipuesearch.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
