@@ -93,16 +93,16 @@
       <h2 id="hotel-list-title">Hotels in Paris</h2>
     </div>
 
-    <div class="row paris-hotel">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel">
+    <div id="paris-hotel1" class="row paris-hotel">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
         <div class="col-xs-12 text-center">
-          <h3 class="hotel-name">Hotel 1</h3>
+          <h3 class="hotel-name">Chez Alice</h3>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 text-center">
           <img class="hotel-img" src="img/hotel1_comp.jpg">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 text-center">
-          <p class="hotel-description">Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+          <p class="hotel-description pull-left">A nice little old fashioned little hotel and bistro.  Alice is always glad to see you.</p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
           <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$120</span> per night</p>
@@ -111,6 +111,42 @@
     </div>
 
   </div>
+
+  <!-- PARIS MODALS -->
+
+    <div class="modal" id="paris-hotel1-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" data-backdrop="static">&times;</button>
+            <h2 class="modal-title text-center">Chez Alice</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <img class="modal-pic" src="img/hotel1_comp.jpg" alt="paris hotel1 modal pic">
+              </div>
+              <div class="col-xs-12 text-center">
+                <p class="modal-hotel-description">Venez Chez Alice!  All are welcome in this quaint little bistro.  Hang your coats at the door, play a game of pool on our old table.  Listen to the sound of jazz fill the night.  And when you get too tired, or have had one too many, kick off your shoes and stay the night.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-center">
+                <p class="modal-hotel-price"><span id="modal-paris-hotel1-price">$120</span> per night</p>
+              </div>
+              <div class="col-xs-6 text-center">
+                <p class="modal-hotel-reviews">See Reviews</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Reserve</button>
+            <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button class="btn btn-danger">Ignore this Hotel</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Content Break-->
   <div class="container-fluid">
