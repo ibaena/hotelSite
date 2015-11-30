@@ -93,6 +93,11 @@ body{
   line-height: 1.3em;
 }
 
+.hotel-price-p{
+  font-size: 1.2em;
+  padding-top: 7px;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1200px){
