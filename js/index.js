@@ -39,8 +39,14 @@ $(document).ready(function(){
 	 		}
 	 		img++;
  		}, 10000);
+	}
 
- 	}
+	// ========= MODAL SECTION ==============
+
+	// USER SLIDE
+	$('.modal-hotel-reviews').click(function(event) {
+		$(this).parent().parent().next().slideToggle(400);
+	});
 
 
  	// FUNCTIONS CALLED

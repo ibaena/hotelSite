@@ -88,7 +88,148 @@
   <!-- TODO Slide Down filter -->
 
   <!-- List items -->
-  
+  <div class="container-fluid hotel-list-container">
+    <div class="col-xs-12 text-center">
+      <h2 id="hotel-list-title">Hotels in Paris</h2>
+    </div>
+
+    <div id="paris-hotel1" class="row paris-hotel">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
+        <div class="col-xs-12 text-center">
+          <h3 class="hotel-name">Chez Sandrine</h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+          <img class="hotel-img" src="img/hotel1_comp.jpg">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+          <p class="hotel-description pull-left">A nice little old fashioned little hotel and bistro.  Sandrine is always glad to see you.</p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1">
+          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$120</span> per night</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="paris-hotel2" class="row paris-hotel">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
+        <div class="col-xs-12 text-center">
+          <h3 class="hotel-name">Hotel Hubris</h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+          <img class="hotel-img" src="img/hotel1_comp.jpg">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+          <p class="hotel-description pull-left">Situated in the 2nd arrondissement, this hotel provides all amenities that even the most discerning visitor could want.</p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1">
+          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$260</span> per night</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="paris-hotel3" class="row paris-hotel">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
+        <div class="col-xs-12 text-center">
+          <h3 class="hotel-name">Le Chateau à Bobigny</h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+          <img class="hotel-img" src="img/hotel1_comp.jpg">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+          <p class="hotel-description pull-left">A diamond in the rough.  If you need a nice place to stay near Paris and you are on a budget, this one is for you.  Just don't go out past 9pm or make direct eye contact with the locals and you'll be fine.</p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1">
+          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$70</span> per night</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="london-hotel1" class="row london-hotel">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
+        <div class="col-xs-12 text-center">
+          <h3 class="hotel-name">The Chipper Hotel</h3>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+          <img class="hotel-img" src="img/hotel1_comp.jpg">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+          <p class="hotel-description pull-left">This hotel is right in the heart of the city!</p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1">
+          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$125</span> per night</p>
+        </div>
+      </div>
+    </div>    
+
+  </div>
+
+  <!-- PARIS MODALS -->
+
+    <div class="modal" id="paris-hotel1-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" data-backdrop="static">&times;</button>
+            <h2 class="modal-title text-center">Chez Sandrine</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <img class="modal-pic" src="img/hotel1_comp.jpg" alt="paris hotel1 modal pic">
+              </div>
+              <div class="col-xs-12 text-center">
+                <p class="modal-hotel-description">Venez Chez Sandrine!  All are welcome in this quaint little bistro.  Hang your coats at the door, play a game of pool on our old table.  Listen to the sound of jazz fill the night.  And when you get too tired, or have had one too many, kick off your shoes and stay the night.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-center">
+                <p class="modal-hotel-price"><span id="modal-paris-hotel1-price">$120</span> per night</p>
+              </div>
+              <div class="col-xs-6 text-center">
+                <p class="modal-hotel-reviews">See Reviews</p>
+              </div>
+            </div>
+
+            <div class='reviews'>
+              <hr />
+              
+              <div class="row user-review">
+                <div class="col-xs-12">
+                  <p class="user">Tom wrote:</p>
+                </div>
+                <div class="col-xs-12">
+                  <p class="user-review">I used to love coming here before work took me far, far away.  Good drink, good company, and a great view overlooking the Seine river.  Now that I'm back in the area, I've been trying to bring the family here whenever I can.</p>
+                </div>
+                <div class="col-xs-12">
+                  <p class="user-rating">*****</p>
+                </div>
+              </div>
+              
+              <hr />
+
+              <div class="row user-review">
+                <div class="col-xs-12">
+                  <p class="user">John wrote:</p>
+                </div>
+                <div class="col-xs-12">
+                  <p class="user-review">Not a bad place.  A bit too much cigar smoke for my taste, and the landlady can't seem to keep her hands off me, even though I keep telling her I have a girlfriend.  The atmosphere is good though.</p>
+                </div>
+                <div class="col-xs-12">
+                  <p class="user-rating">***</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Reserve</button>
+            <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button class="btn btn-danger">Ignore this Hotel</button>
+          </div>
+        </div>
+      </div>
+    </div>   <!-- END PARIS HOTEL1 MODAL -->
 
   <!-- Content Break-->
   <div class="container-fluid">
