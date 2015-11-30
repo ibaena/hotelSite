@@ -68,11 +68,10 @@ body{
 #hotel-list-title,
 .hotel{
   display: none;
-  transition: 1.5s;
 }
 
 .hotel-list-container{
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 .hotel{
@@ -112,7 +111,7 @@ body{
   width: auto;
 }
 
-.modal-hotel-description{
+#modal-hotel-description{
   font-size: 1.2em;
   padding-top: 20px;
   padding-bottom: 15px;

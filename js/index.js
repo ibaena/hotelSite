@@ -43,17 +43,59 @@ $(document).ready(function(){
 
 	// SEARCH BAR FUNCTION
 	function searchInput(){
+		var listArea = $('#hotel-list-area');
+		var searchInp = $('#search');
+		var checkin = $('#checkin-input');
+		var checkout = $('#checkout-input');
+		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-			$('#hotel-list-area').fadeIn(200, function() {
-				$(this).css('display', 'initial');
-				$('#hotel-list-title').css('display', 'initial');
-			});
+
+			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
+				// alert('enter correct fields');
+				// return;
+			// }
+
+			for(var i=0; i<citiesArray.length; i++){
+				if(searchInp.val().toLowerCase() == citiesArray[i]){
+					$('#hotel-list-area').fadeIn(500, function() {
+						$(this).css('display', 'block');	
+					});
+
+					$('.hotel-list-location').text(searchInp.val());
+
+					$('#hotel-list-title').fadeIn(500, function() {
+						$(this).css('display', 'block');	
+					});
+			
+					$('.hotel').each(function() {
+						if($(this).parent().hasClass(citiesArray[i])){
+							$(this).fadeIn(2000, function() {
+								$(this).css('display', 'block');	
+							});
+						}
+					});
+					
+				}
+			}
+
 		});
 	}
 
 	// ========= MODAL SECTION ==============
+
+	// MAIN MODAL FUNCTION
+	function mainModal(){
+		$('.hotel').each(function() {
+			$(this).click(function(event) {
+				$(this).attr('data-target', '#main-modal');
+				$('#modal-title').text($(this).find('h3').text());
+				$('#modal-hotel-description').text($(this).find('p.modal-description').text());
+				$('#modal-price').text($(this).find('span.hotel-price').text());
+			});
+		});
+	}
 
 	// USER SLIDE
 	$('.modal-hotel-reviews').click(function(event) {
@@ -68,7 +110,18 @@ $(document).ready(function(){
 		})
   });
 
+//modal ingnore button
+$(".modal-footer").on("click", ".btn-danger", function() {
+    $('.paris-hotel').remove();
 
+  });
+
+//search bar
+var options = {
+	data: ["New York City", "London", "Los Angeles","Paris"]
+};
+
+$("#search").easyAutocomplete(options);
 
 
 
@@ -76,4 +129,5 @@ $(document).ready(function(){
  	navScrollResize();
  	imageChanger();
  	searchInput();
+ 	mainModal();
 });
