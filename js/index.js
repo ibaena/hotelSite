@@ -42,8 +42,6 @@ $(document).ready(function(){
 
  	}
 
- 	$('#tipue_search_input').tipuesearch();
-
 
  	// FUNCTIONS CALLED
  	navScrollResize();
