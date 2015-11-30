@@ -64,6 +64,13 @@ body{
 
 /* ===== HOTEL LIST ===== */
 
+#hotel-list-area,
+#hotel-list-title,
+.hotel{
+  display: none;
+  transition: 1.5s;
+}
+
 .hotel-list-container{
   margin: 80px 0;
 }
