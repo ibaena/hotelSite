@@ -74,8 +74,6 @@ $(document).ready(function(){
 							$(this).fadeIn(2000, function() {
 								$(this).css('display', 'block');	
 							});
-						}else{
-							$(this).remove();
 						}
 					});
 					
