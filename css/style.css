@@ -82,7 +82,7 @@ body{
 }
 
 .hotel-img{
-  max-width: 250px;
+  max-width: 100%;
   height: auto;
   width: auto;
 }
@@ -135,18 +135,30 @@ body{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
+  .hotel-img{
+    width: 40%;
+  }
+
   #head-images{
     height: 25%;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px){
+  .hotel-img{
+    width: 60%;
+  }
+
   #head-images{
     height: 20%;
   }
 }
 
 @media screen and (max-width: 479px){
+  .hotel-img{
+    width: 60%;
+  }
+
   #head-images{
     height: 20%;
   }
