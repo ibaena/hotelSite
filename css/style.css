@@ -39,6 +39,10 @@ body{
   height: 70px;
 }
 
+#search {
+  width: 100%;
+}
+
 #nav-links a{
   transition: all 0.5s;
   font-size: 1.3em;
@@ -144,6 +148,13 @@ body{
 
 
 }
+
+.easy-autocomplete {
+
+  margin:0;
+  width: 100%;
+}
+
 
 /*MEDIA QUERIES*/
 

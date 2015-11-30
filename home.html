@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
   <!--css-->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/classic.css">
   <link rel="stylesheet" type="text/css" href="css/classic.date.css">
   <link rel="stylesheet" type="text/css" href="css/classic.time.css">
   <link rel="stylesheet" type="text/css" href="css/easy-autocomplete.css">
   <link rel="stylesheet" type="text/css" href="css/easy-autocomplete.themes.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -75,7 +75,7 @@
       <div class="col-sm-2">
         <input id="checkout-input" type="text" class="form-control form-group date calendar" placeholder="Check Out">
       </div>
-      <div class="col-sm-1">
+      <div class="col-sm-2">
         <button data-toggle="dropdown" class="form-control dropdown-toggle">Guests<span class="caret"></span></button>
   <ul class="dropdown-menu">
     <option value="1">1</option>
@@ -107,7 +107,7 @@
     </div>
 
     <div id="paris-hotel1" class="row paris">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
         <div class="col-xs-12 text-center">
           <h3 class="hotel-name">Chez Sandrine</h3>
         </div>
@@ -125,7 +125,7 @@
     </div>
 
     <div id="paris-hotel2" class="row paris">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
         <div class="col-xs-12 text-center">
           <h3 class="hotel-name">Hotel Hubris</h3>
         </div>
@@ -143,7 +143,7 @@
     </div>
 
     <div id="paris-hotel3" class="row paris">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
         <div class="col-xs-12 text-center">
           <h3 class="hotel-name">Le Chateau à Bobigny</h3>
         </div>
@@ -161,7 +161,7 @@
     </div>
 
     <div id="london-hotel1" class="row london">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 hotel" data-toggle="modal" data-target="#paris-hotel1-modal">
         <div class="col-xs-12 text-center">
           <h3 class="hotel-name">The Chipper Hotel</h3>
         </div>
@@ -182,12 +182,12 @@
 
   <!-- PARIS MODALS -->
 
-    <div class="modal" id="main-modal">
+    <div class="modal" id="paris-hotel1-modal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" data-dismiss="modal" data-backdrop="static">&times;</button>
-            <h2 id="modal-title" class="text-center"></h2>
+            <h2 class="modal-title text-center">Chez Sandrine</h2>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -195,7 +195,11 @@
                 <img class="modal-pic" src="img/hotel1_comp.jpg" alt="paris hotel1 modal pic">
               </div>
               <div class="col-xs-12 text-center">
+<<<<<<< HEAD
+                <p class="modal-hotel-description">Venez Chez Sandrine!  All are welcome in this quaint little bistro.  Hang your coats at the door, play a game of pool on our old table.  Listen to the sound of jazz fill the night.  And when you get too tired, or have had one too many, kick off your shoes and stay the night.</p>
+=======
                 <p id="modal-hotel-description"></p>
+>>>>>>> ff0e93c694e4779278f76effbd95171b46de1a94
               </div>
             </div>
             <div class="row">
@@ -223,6 +227,19 @@
               </div>
               
               <hr />
+
+              <div class="row user-review">
+                <div class="col-xs-12">
+                  <p class="user">John wrote:</p>
+                </div>
+                <div class="col-xs-12">
+                  <p class="user-review">Not a bad place.  A bit too much cigar smoke for my taste, and the landlady can't seem to keep her hands off me, even though I keep telling her I have a girlfriend.  The atmosphere is good though.</p>
+                </div>
+                <div class="col-xs-12">
+                  <p class="user-rating">***</p>
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -316,8 +333,8 @@
   <script src="js/picker.date.js"></script>
   <script src="js/picker.time.js"></script>
   <script src="js/legacy.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

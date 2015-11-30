@@ -45,8 +45,6 @@ $(document).ready(function(){
 	function searchInput(){
 		var listArea = $('#hotel-list-area');
 		var searchInp = $('#search');
-		var checkin = $('#checkin-input');
-		var checkout = $('#checkout-input');
 		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
 
 		$('#search-button').click(function(e) {
@@ -69,6 +67,10 @@ $(document).ready(function(){
 						$(this).css('display', 'block');	
 					});
 			
+
+					$('.hotel').fadeIn(2000, function() {
+						$(this).css('display', 'block');	
+
 					$('.hotel').each(function() {
 						if($(this).parent().hasClass(citiesArray[i])){
 							$(this).fadeIn(2000, function() {
@@ -77,8 +79,8 @@ $(document).ready(function(){
 						}else{
 							$(this).remove();
 						}
+
 					});
-					
 				}
 			}
 
@@ -107,11 +109,18 @@ $(document).ready(function(){
 	//Pick a date plugin
 	$(function() {
    var options = Date();
-		$('.calendar').pickadate({
+		$('#checkin-input').pickadate({
   		min: new Date(options)
-		})
-  });
+  	})
+		$('#checkout-input').pickadate({
+			min: new Date(options)
+	})
+		
 
+	});
+		
+
+   
 //modal ingnore button
 $(".modal-footer").on("click", ".btn-danger", function() {
     $('.paris-hotel').remove();
