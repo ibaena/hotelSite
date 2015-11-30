@@ -44,10 +44,17 @@ $(document).ready(function(){
 	// SEARCH BAR FUNCTION
 	function searchInput(){
 		var searchInp = $('#search');
+		var checkin = $('#checkin-input');
+		var checkout = $('#checkout-input');
 		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
+
+			if(!searchInp.val() || !checkout.val() || !checkin.val()){
+				alert('enter correct fields');
+				return;
+			}
 
 			for(var i=0; i<citiesArray.length; i++){
 				if(searchInp.val().toLowerCase() == citiesArray[i]){
