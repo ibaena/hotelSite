@@ -41,6 +41,18 @@ $(document).ready(function(){
  		}, 10000);
 	}
 
+	// SEARCH BAR FUNCTION
+	function searchInput(){
+
+		$('#search-button').click(function(e) {
+			e.preventDefault();
+			$('#hotel-list-area').fadeIn(1500, function() {
+				$(this).css('display', 'initial');
+				$('#hotel-list-title').css('display', 'initial');
+			});
+		});
+	}
+
 	// ========= MODAL SECTION ==============
 
 	// USER SLIDE
@@ -52,4 +64,5 @@ $(document).ready(function(){
  	// FUNCTIONS CALLED
  	navScrollResize();
  	imageChanger();
+ 	searchInput();
 });
