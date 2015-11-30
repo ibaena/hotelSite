@@ -89,13 +89,37 @@ body{
 
 .hotel-description{
   margin-top: 15px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 1.3em;
 }
 
 .hotel-price-p{
   font-size: 1.2em;
   padding-top: 7px;
+}
+
+/* ===== HOTEL MODALS ===== */
+.modal-pic{
+  max-width: 400px;
+  height: auto;
+  width: auto;
+}
+
+.modal-hotel-description{
+  font-size: 1.2em;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.modal-hotel-price{
+  font-size: 1.3em;
+}
+
+.modal-hotel-reviews{
+  font-size: 1.3em;
+  color: #1855D0;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /*MEDIA QUERIES*/
