@@ -68,6 +68,7 @@ body{
 #hotel-list-title,
 .hotel{
   display: none;
+  transition: 1.5s;
 }
 
 .hotel-list-container{

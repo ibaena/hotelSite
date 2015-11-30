@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-			$('#hotel-list-area').fadeIn(1500, function() {
+			$('#hotel-list-area').fadeIn(200, function() {
 				$(this).css('display', 'initial');
 				$('#hotel-list-title').css('display', 'initial');
 			});
