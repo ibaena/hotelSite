@@ -100,7 +100,7 @@ body{
 
 /* ===== HOTEL MODALS ===== */
 .modal-pic{
-  max-width: 400px;
+  max-width: 90%;
   height: auto;
   width: auto;
 }
