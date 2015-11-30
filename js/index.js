@@ -89,6 +89,7 @@ $(document).ready(function(){
 		$('.hotel').each(function() {
 			$(this).click(function(event) {
 				$(this).attr('data-target', '#main-modal');
+				$('#modal-title').text($(this).find('h3').text());
 			});
 		});
 	}
