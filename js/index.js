@@ -84,6 +84,15 @@ $(document).ready(function(){
 
 	// ========= MODAL SECTION ==============
 
+	// MAIN MODAL FUNCTION
+	function mainModal(){
+		$('.hotel').each(function() {
+			$(this).click(function(event) {
+				$(this).attr('data-target', '#main-modal');
+			});
+		});
+	}
+
 	// USER SLIDE
 	$('.modal-hotel-reviews').click(function(event) {
 		$(this).parent().parent().next().slideToggle(400);
@@ -116,4 +125,5 @@ $("#search").easyAutocomplete(options);
  	navScrollResize();
  	imageChanger();
  	searchInput();
+ 	mainModal();
 });
