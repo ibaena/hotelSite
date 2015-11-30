@@ -91,6 +91,12 @@ $(".modal-footer").on("click", ".btn-danger", function() {
 
   });
 
+//search bar
+var options = {
+	data: ["New York City", "London", "Los Angeles","Paris"]
+};
+
+$("#search").easyAutocomplete(options);
 
 
 
