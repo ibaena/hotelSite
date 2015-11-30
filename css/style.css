@@ -32,6 +32,8 @@ body{
   margin-top: 50px;
 }
 
+/* ====  NAV ===== */
+
 #nav-scroller{
   transition: all 0.5s;
   height: 70px;
@@ -49,6 +51,8 @@ body{
   margin-top: 20px;
 }
 
+/* ==== HEADER ===== */
+
 #head-images{
   height: 45%;
   background: #2EECDC;
@@ -56,6 +60,25 @@ body{
   background: url("../img/hotelbed_comp.jpg") no-repeat;
   background-size: cover;
   transition: all 3s;
+}
+
+/* ===== HOTEL LIST ===== */
+
+.hotel-list-container{
+  margin: 80px 0;
+}
+
+.hotel{
+  border-top: 1px solid #DCDADA;
+  border-bottom: 1px solid #DCDADA;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.hotel-img{
+  max-width: 200px;
+  height: auto;
+  width: auto;
 }
 
 /*MEDIA QUERIES*/
