@@ -71,8 +71,14 @@ body{
 .hotel{
   border-top: 1px solid #DCDADA;
   border-bottom: 1px solid #DCDADA;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: border-top 1s, border-bottom 1s;
+}
+
+.hotel:hover{
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
 }
 
 .hotel-img{
