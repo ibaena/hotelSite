@@ -48,6 +48,17 @@ $(document).ready(function(){
 		$(this).parent().parent().next().slideToggle(400);
 	});
 
+	//Pick a date plugin
+	$(function() {
+   var options = Date();
+		$('.calendar').pickadate({
+  		min: new Date(options)
+		})
+  });
+
+
+
+
 
  	// FUNCTIONS CALLED
  	navScrollResize();
