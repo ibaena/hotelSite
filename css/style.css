@@ -1,6 +1,12 @@
 body{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   height: 2000px;
+  background: url('../img/greyzz.png') repeat;
+/*
+========================================================
+ This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.
+ =======================================================*/
 }
 
 .locations {
@@ -10,6 +16,9 @@ body{
 .searchbar {
   margin-top: 50px;
   clear: both;
+}
+.dropdown-menu {
+  text-align: center;
 }
 
 #subhead {
@@ -22,6 +31,8 @@ body{
   margin-bottom: 175px;
   margin-top: 50px;
 }
+
+/* ====  NAV ===== */
 
 #nav-scroller{
   transition: all 0.5s;
@@ -40,6 +51,8 @@ body{
   margin-top: 20px;
 }
 
+/* ==== HEADER ===== */
+
 #head-images{
   height: 45%;
   background: #2EECDC;
@@ -47,6 +60,70 @@ body{
   background: url("../img/hotelbed_comp.jpg") no-repeat;
   background-size: cover;
   transition: all 3s;
+}
+
+/* ===== HOTEL LIST ===== */
+
+.hotel-list-container{
+  margin: 80px 0;
+}
+
+.hotel{
+  border-top: 1px solid #DCDADA;
+  border-bottom: 1px solid #DCDADA;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: border-top 1s, border-bottom 1s;
+}
+
+.hotel:hover{
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+}
+
+.hotel-img{
+  max-width: 250px;
+  height: auto;
+  width: auto;
+}
+
+.hotel-description{
+  margin-top: 15px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+.hotel-price-p{
+  font-size: 1.2em;
+  padding-top: 7px;
+}
+
+/* ===== HOTEL MODALS ===== */
+.modal-pic{
+  max-width: 400px;
+  height: auto;
+  width: auto;
+}
+
+.modal-hotel-description{
+  font-size: 1.2em;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.modal-hotel-price{
+  font-size: 1.3em;
+}
+
+.modal-hotel-reviews{
+  font-size: 1.3em;
+  color: #1855D0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reviews{
+  display: none;
 }
 
 /*MEDIA QUERIES*/
