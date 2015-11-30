@@ -91,7 +91,7 @@ $(document).ready(function(){
 				$(this).attr('data-target', '#main-modal');
 				$('#modal-title').text($(this).find('h3').text());
 				$('#modal-hotel-description').text($(this).find('p.modal-description').text());
-				// $('#modal-hotel-description').text($(this).children('p').filter('.modal-description').text());
+				$('#modal-price').text($(this).find('span.hotel-price').text());
 			});
 		});
 	}
