@@ -43,6 +43,7 @@ $(document).ready(function(){
 
 	// SEARCH BAR FUNCTION
 	function searchInput(){
+		var listArea = $('#hotel-list-area');
 		var searchInp = $('#search');
 		var checkin = $('#checkin-input');
 		var checkout = $('#checkout-input');
@@ -73,6 +74,8 @@ $(document).ready(function(){
 							$(this).fadeIn(2000, function() {
 								$(this).css('display', 'block');	
 							});
+						}else{
+							$(this).remove();
 						}
 					});
 					
