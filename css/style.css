@@ -1,6 +1,12 @@
 body{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   height: 2000px;
+  background: url('../img/greyzz.png') repeat;
+/*
+========================================================
+ This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.
+ =======================================================*/
 }
 
 .locations {
