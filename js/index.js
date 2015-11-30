@@ -48,17 +48,24 @@ $(document).ready(function(){
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-			$('#hotel-list-area').fadeIn(500, function() {
-				$(this).css('display', 'block');	
-			});
 
-			$('#hotel-list-title').fadeIn(500, function() {
-				$(this).css('display', 'block');	
-			});
+			for(var i=0; i<citiesArray.length; i++){
+				if(searchInp.val().toLowerCase() == citiesArray[i]){
+					$('#hotel-list-area').fadeIn(500, function() {
+						$(this).css('display', 'block');	
+					});
+
+					$('.hotel-list-location').text(searchInp.val());
+
+					$('#hotel-list-title').fadeIn(500, function() {
+						$(this).css('display', 'block');	
+					});
 			
-			$('.hotel').fadeIn(1000, function() {
-				$(this).css('display', 'block');	
-			});
+					$('.hotel').fadeIn(2000, function() {
+						$(this).css('display', 'block');	
+					});
+				}
+			}
 
 		});
 	}
