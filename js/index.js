@@ -43,6 +43,7 @@ $(document).ready(function(){
 
 	// SEARCH BAR FUNCTION
 	function searchInput(){
+		var listArea = $('#hotel-list-area');
 		var searchInp = $('#search');
 		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
 
@@ -66,8 +67,19 @@ $(document).ready(function(){
 						$(this).css('display', 'block');	
 					});
 			
+
 					$('.hotel').fadeIn(2000, function() {
 						$(this).css('display', 'block');	
+
+					$('.hotel').each(function() {
+						if($(this).parent().hasClass(citiesArray[i])){
+							$(this).fadeIn(2000, function() {
+								$(this).css('display', 'block');	
+							});
+						}else{
+							$(this).remove();
+						}
+
 					});
 				}
 			}
@@ -83,6 +95,8 @@ $(document).ready(function(){
 			$(this).click(function(event) {
 				$(this).attr('data-target', '#main-modal');
 				$('#modal-title').text($(this).find('h3').text());
+				$('#modal-hotel-description').text($(this).find('p.modal-description').text());
+				$('#modal-price').text($(this).find('span.hotel-price').text());
 			});
 		});
 	}

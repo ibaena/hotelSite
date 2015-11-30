@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
   <!--css-->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/classic.css">
   <link rel="stylesheet" type="text/css" href="css/classic.date.css">
   <link rel="stylesheet" type="text/css" href="css/classic.time.css">
   <link rel="stylesheet" type="text/css" href="css/easy-autocomplete.css">
   <link rel="stylesheet" type="text/css" href="css/easy-autocomplete.themes.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -116,9 +116,10 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 text-center">
           <p class="hotel-description pull-left">A nice little old fashioned little hotel and bistro.  Sandrine is always glad to see you.</p>
+          <p class="modal-description hidden">Venez Chez Sandrine!  All are welcome in this quaint little bistro.  Hang your coats at the door, play a game of pool on our old table.  Listen to the sound of jazz fill the night.  And when you get too tired, or have had one too many, kick off your shoes and stay the night.</p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
-          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$120</span> per night</p>
+          <p class="hotel-price-p pull-right"><span class="hotel-price">$120</span> per night</p>
         </div>
       </div>
     </div>
@@ -133,9 +134,10 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 text-center">
           <p class="hotel-description pull-left">Situated in the 2nd arrondissement, this hotel provides all amenities that even the most discerning visitor could want.</p>
+          <p class="modal-description hidden"></p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
-          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$260</span> per night</p>
+          <p class="hotel-price-p pull-right"><span class="hotel-price">$260</span> per night</p>
         </div>
       </div>
     </div>
@@ -150,9 +152,10 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 text-center">
           <p class="hotel-description pull-left">A diamond in the rough.  If you need a nice place to stay near Paris and you are on a budget, this one is for you.  Just don't go out past 9pm or make direct eye contact with the locals and you'll be fine.</p>
+          <p class="modal-description hidden"></p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
-          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$70</span> per night</p>
+          <p class="hotel-price-p pull-right"><span class="hotel-price">$70</span> per night</p>
         </div>
       </div>
     </div>
@@ -167,9 +170,10 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-8 text-center">
           <p class="hotel-description pull-left">This hotel is right in the heart of the city!</p>
+          <p class="modal-description hidden"></p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
-          <p class="hotel-price-p pull-right"><span id="paris-hotel1-price">$125</span> per night</p>
+          <p class="hotel-price-p pull-right"><span class="hotel-price">$125</span> per night</p>
         </div>
       </div>
     </div>    
@@ -191,12 +195,16 @@
                 <img class="modal-pic" src="img/hotel1_comp.jpg" alt="paris hotel1 modal pic">
               </div>
               <div class="col-xs-12 text-center">
+<<<<<<< HEAD
                 <p class="modal-hotel-description">Venez Chez Sandrine!  All are welcome in this quaint little bistro.  Hang your coats at the door, play a game of pool on our old table.  Listen to the sound of jazz fill the night.  And when you get too tired, or have had one too many, kick off your shoes and stay the night.</p>
+=======
+                <p id="modal-hotel-description"></p>
+>>>>>>> ff0e93c694e4779278f76effbd95171b46de1a94
               </div>
             </div>
             <div class="row">
               <div class="col-xs-6 text-center">
-                <p class="modal-hotel-price"><span id="modal-paris-hotel1-price">$120</span> per night</p>
+                <p class="modal-hotel-price"><span id="modal-price">$120</span> per night</p>
               </div>
               <div class="col-xs-6 text-center">
                 <p class="modal-hotel-reviews">See Reviews</p>
@@ -325,8 +333,8 @@
   <script src="js/picker.date.js"></script>
   <script src="js/picker.time.js"></script>
   <script src="js/legacy.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
