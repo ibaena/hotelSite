@@ -90,6 +90,8 @@ $(document).ready(function(){
 			$(this).click(function(event) {
 				$(this).attr('data-target', '#main-modal');
 				$('#modal-title').text($(this).find('h3').text());
+				$('#modal-hotel-description').text($(this).find('p.modal-description').text());
+				// $('#modal-hotel-description').text($(this).children('p').filter('.modal-description').text());
 			});
 		});
 	}
