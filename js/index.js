@@ -51,10 +51,10 @@ $(document).ready(function(){
 		$('#search-button').click(function(e) {
 			e.preventDefault();
 
-			if(!searchInp.val() || !checkout.val() || !checkin.val()){
-				alert('enter correct fields');
-				return;
-			}
+			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
+				// alert('enter correct fields');
+				// return;
+			// }
 
 			for(var i=0; i<citiesArray.length; i++){
 				if(searchInp.val().toLowerCase() == citiesArray[i]){
