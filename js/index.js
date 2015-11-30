@@ -78,6 +78,11 @@ $(document).ready(function(){
 		})
   });
 
+//modal ingnore button
+$(".modal-footer").on("click", ".btn-danger", function() {
+    $('.paris-hotel').remove();
+
+  });
 
 
 
