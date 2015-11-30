@@ -39,11 +39,41 @@ $(document).ready(function(){
 	 		}
 	 		img++;
  		}, 10000);
+	}
 
- 	}
+	// SEARCH BAR FUNCTION
+	function searchInput(){
+
+		$('#search-button').click(function(e) {
+			e.preventDefault();
+			$('#hotel-list-area').fadeIn(200, function() {
+				$(this).css('display', 'initial');
+				$('#hotel-list-title').css('display', 'initial');
+			});
+		});
+	}
+
+	// ========= MODAL SECTION ==============
+
+	// USER SLIDE
+	$('.modal-hotel-reviews').click(function(event) {
+		$(this).parent().parent().next().slideToggle(400);
+	});
+
+	//Pick a date plugin
+	$(function() {
+   var options = Date();
+		$('.calendar').pickadate({
+  		min: new Date(options)
+		})
+  });
+
+
+
 
 
  	// FUNCTIONS CALLED
  	navScrollResize();
  	imageChanger();
+ 	searchInput();
 });
