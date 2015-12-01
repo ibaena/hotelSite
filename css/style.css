@@ -195,14 +195,17 @@ max-height:100%;
 #pic4 {
   max-width:100%;
 max-height:100%;
-  margin-left: 12px;
+ 
 }
 
 #pic5 {
   max-width:100%;
 max-height:100%;
-  margin-right: 210px;
-}
+  }
+
+  #pic3,#pic4,#pic5 {
+    height: 300px;
+  }
 
 
 .block1, .block2{
