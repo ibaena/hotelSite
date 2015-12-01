@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-
+			$('#head-images').css('height', '20%');;
 			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
 				// alert('enter correct fields');
 				// return;
