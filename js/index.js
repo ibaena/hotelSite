@@ -95,7 +95,7 @@ $(document).ready(function(){
 				$('#modal-hotel-description').text($(this).find('p.modal-description').text());
 				$('#modal-price').text($(this).find('span.hotel-price').text());
 				$('#modal-reviews').append($(this).siblings('.user-review'));
-				$('#modal-reviews').children('.user-review').removeClass('hidden').addClass('visible');
+				$('#modal-reviews').children('.user-review').removeClass('hidden');
 			});
 		});
 	}
@@ -133,7 +133,7 @@ $(document).ready(function(){
 
 //search bar
 var options = {
-	data: ["New York City", "London", "Los Angeles","Paris"]
+	data: ["New York", "London", "Los Angeles","Paris"]
 };
 
 $("#search").easyAutocomplete(options);
