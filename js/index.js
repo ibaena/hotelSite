@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-			$('#head-images').css('height', '20%');;
+			
 			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
 				// alert('enter correct fields');
 				// return;
@@ -76,7 +76,8 @@ $(document).ready(function(){
 							});
 						}
 					});
-					
+				
+					$('#head-images').css('height', '20%');					
 				}
 			}
 
@@ -90,7 +91,7 @@ $(document).ready(function(){
 		$('.hotel').each(function() {
 			$(this).click(function(event) {
 				$(this).attr('data-target', '#main-modal');
-				$('#modal-title').text($(this).find('h3').text());
+				$('#modal-title').text($(this).find('h2').text());
 				$('#modal-hotel-description').text($(this).find('p.modal-description').text());
 				$('#modal-price').text($(this).find('span.hotel-price').text());
 			});
