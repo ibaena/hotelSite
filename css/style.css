@@ -1,0 +1,190 @@
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 2000px;
+  background: url('../img/greyzz.png') repeat;
+/*
+========================================================
+ This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.
+ =======================================================*/
+}
+
+.locations {
+  text-align: center;
+}
+
+.searchbar {
+  margin-top: 50px;
+  clear: both;
+}
+.dropdown-menu {
+  text-align: center;
+}
+
+#subhead {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.recommendation {
+  margin-bottom: 175px;
+  margin-top: 50px;
+}
+
+/* ====  NAV ===== */
+
+#nav-scroller{
+  transition: all 0.5s;
+  height: 70px;
+}
+
+#nav-links a{
+  transition: all 0.5s;
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+#nav-scroller a{
+  font-size: 2.4em;
+  transition: all 0.5s;
+  margin-top: 20px;
+}
+
+/* ==== HEADER ===== */
+
+#head-images{
+  height: 45%;
+  background: #2EECDC;
+  padding-top: 100px;
+  background: url("../img/hotelbed_comp.jpg") no-repeat;
+  background-size: cover;
+  transition: all 3s;
+}
+
+/* ===== HOTEL LIST ===== */
+
+#hotel-list-area,
+#hotel-list-title,
+.hotel{
+  display: none;
+}
+
+.hotel-list-container{
+  margin: 50px 0;
+}
+
+.hotel{
+  border-top: 1px solid #DCDADA;
+  border-bottom: 1px solid #DCDADA;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: border-top 1s, border-bottom 1s;
+}
+
+.hotel:hover{
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+}
+
+.hotel-img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.hotel-description{
+  margin-top: 15px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+.hotel-price-p{
+  font-size: 1.2em;
+  padding-top: 7px;
+}
+
+/* ===== HOTEL MODALS ===== */
+.modal-pic{
+  max-width: 90%;
+  height: auto;
+  width: auto;
+}
+
+#modal-hotel-description{
+  font-size: 1.2em;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.modal-hotel-price{
+  font-size: 1.3em;
+}
+
+.modal-hotel-reviews{
+  font-size: 1.3em;
+  color: #1855D0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reviews{
+  display: none;
+}
+
+#brand {
+  margin-top: 170px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  padding: 10px; background-color: black; border-radius: 5px;
+  opacity: 0.5;
+
+
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 992px){
+  #head-images{
+    height: 27%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .hotel-img{
+    width: 40%;
+  }
+
+  #head-images{
+    height: 25%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .hotel-img{
+    width: 60%;
+  }
+
+  #head-images{
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .hotel-img{
+    width: 60%;
+  }
+
+  #head-images{
+    height: 20%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+    #brand {
+        display: none;
+    }
+}
