@@ -48,14 +48,20 @@ $(document).ready(function(){
 		var checkin = $('#checkin-input');
 		var checkout = $('#checkout-input');
 		var citiesArray = ['paris', 'london', 'madrid'];
+		var inputWarning = document.getElementById('input-warning');
+		var warning = document.createElement('p');
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
 			
-			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
-				// alert('enter correct fields');
-				// return;
-			// }
+			if(!searchInp.val() || !checkout.val() || !checkin.val()){
+				warning.textContent = "Please fill out all required fields";
+				inputWarning.appendChild(warning);
+				inputWarning.style.display = 'block';
+				return;
+			}else{
+				inputWarning.style.display = 'none';
+			}
 
 			for(var i=0; i<citiesArray.length; i++){
 				if(searchInp.val().toLowerCase() == citiesArray[i]){
