@@ -47,15 +47,21 @@ $(document).ready(function(){
 		var searchInp = $('#search');
 		var checkin = $('#checkin-input');
 		var checkout = $('#checkout-input');
-		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
+		var citiesArray = ['paris', 'london', 'madrid'];
+		var inputWarning = document.getElementById('input-warning');
+		var warning = document.createElement('p');
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
-
-			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
-				// alert('enter correct fields');
-				// return;
-			// }
+			
+			if(!searchInp.val() || !checkout.val() || !checkin.val()){
+				warning.textContent = "Please fill out all required fields";
+				inputWarning.appendChild(warning);
+				inputWarning.style.display = 'block';
+				return;
+			}else{
+				inputWarning.style.display = 'none';
+			}
 
 			for(var i=0; i<citiesArray.length; i++){
 				if(searchInp.val().toLowerCase() == citiesArray[i]){
@@ -76,7 +82,8 @@ $(document).ready(function(){
 							});
 						}
 					});
-					
+				
+					$('#head-images').css('height', '20%');					
 				}
 			}
 
@@ -90,17 +97,40 @@ $(document).ready(function(){
 		$('.hotel').each(function() {
 			$(this).click(function(event) {
 				$(this).attr('data-target', '#main-modal');
-				$('#modal-title').text($(this).find('h3').text());
+				$('#modal-title').text($(this).find('h2').text());
 				$('#modal-hotel-description').text($(this).find('p.modal-description').text());
 				$('#modal-price').text($(this).find('span.hotel-price').text());
+
+				$('#modal-reviews').children('.user-review').remove();
+
+				$('#modal-reviews').append($(this).siblings('.user-review'));
+				$('#modal-reviews').children('.user-review').removeClass('hidden');
 			});
 		});
 	}
+
+	// MODAL IGNORE BUTTON
+	function ignoreHotel(){
+		var hotelGrab;
+
+		$('.hotel').each(function() {
+			$(this).click(function() {
+				hotelGrab = $(this).parent();
+			});
+		});
+
+		$('#ignore-hotel').click(function() {
+			hotelGrab.remove();
+		});
+	}
+
 
 	// USER SLIDE
 	$('.modal-hotel-reviews').click(function(event) {
 		$(this).parent().parent().next().slideToggle(400);
 	});
+
+	// ========= END MODAL ============
 
 	//Pick a date plugin
 	$(function() {
@@ -110,15 +140,9 @@ $(document).ready(function(){
 		})
   });
 
-//modal ingnore button
-$(".modal-footer").on("click", ".btn-danger", function() {
-    $('.paris-hotel').remove();
-
-  });
-
 //search bar
 var options = {
-	data: ["New York City", "London", "Los Angeles","Paris"]
+	data: ["London", "Madrid","Paris"]
 };
 
 $("#search").easyAutocomplete(options);
@@ -141,4 +165,5 @@ $(function(){
  	imageChanger();
  	searchInput();
  	mainModal();
+ 	ignoreHotel();
 });
