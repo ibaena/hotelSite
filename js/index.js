@@ -98,10 +98,28 @@ $(document).ready(function(){
 		});
 	}
 
+	// MODAL IGNORE BUTTON
+	function ignoreHotel(){
+		var hotelGrab;
+
+		$('.hotel').each(function() {
+			$(this).click(function(e) {
+				hotelGrab = e.target.parentNode;
+			});
+		});
+
+		$('#ignore-hotel').click(function() {
+			hotelGrab.remove();
+		});
+	}
+
+
 	// USER SLIDE
 	$('.modal-hotel-reviews').click(function(event) {
 		$(this).parent().parent().next().slideToggle(400);
 	});
+
+	// ========= END MODAL ============
 
 	//Pick a date plugin
 	$(function() {
@@ -109,12 +127,6 @@ $(document).ready(function(){
 		$('.calendar').pickadate({
   		min: new Date(options)
 		})
-  });
-
-//modal ingnore button
-$(".modal-footer").on("click", ".btn-danger", function() {
-    $('.paris-hotel').remove();
-
   });
 
 //search bar
@@ -131,4 +143,5 @@ $("#search").easyAutocomplete(options);
  	imageChanger();
  	searchInput();
  	mainModal();
+ 	ignoreHotel();
 });
