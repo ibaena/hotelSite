@@ -103,8 +103,8 @@ $(document).ready(function(){
 		var hotelGrab;
 
 		$('.hotel').each(function() {
-			$(this).click(function(e) {
-				hotelGrab = e.target.parentNode;
+			$(this).click(function() {
+				hotelGrab = $(this).parent();
 			});
 		});
 
