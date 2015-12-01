@@ -73,26 +73,25 @@
         <input id="checkin-input" type="text" class="form-control form-group date calendar" placeholder="Check In">
       </div>
       <div class="col-sm-2">
-        <input id="checkout-input" type="text" class="form-control form-group date calendar" placeholder="Check Out">
+        <input id="checkout-input" type="text" class="form-control date calendar" placeholder="Check Out">
       </div>
+      <div class="col-sm-2">
+       <button type = "button" class = "btn btn-default dropdown-toggle form-control form-group " data-toggle = "dropdown">
+      Guests 
+      <span class = "caret"></span>
+   </button>
+   
+   <ul class = "dropdown-menu" role = "menu">
+      <li><a>1</a></li>
+      <li><a>2</a></li>
+      <li><a>3</a></li>
+      <li><a>4</a></li>
+      <li><a>5</a></li>
+      <li><a>6+</a></li>
+   </ul>
+   </div>
       <div class="col-sm-1">
-        <button data-toggle="dropdown" class="form-control dropdown-toggle">Guests<span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    
-  </ul>
-      </div>
-      <div class="col-sm-1">
-        <button id="search-button" class="btn btn-primary submit">Search</button>
+        <button id="search-button" class="form-group btn btn-primary submit"><span>Search</span></button>
       </div>
     </form> 
   </div>
@@ -274,19 +273,11 @@
             </div>
           </div>
 
-          <div class="item" id="los-item">
-            <a href="#"><img src="img/los.jpg" alt="Los Angeles" class="city"></a>
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>Visit Hollywood</p>
-            </div>
-          </div>
-
           <div class="item" id="london-item">
-            <a href="#"><img src="img/london2.jpg" alt="London" class="city"></a>
+            <a href="#"><img src="img/madrid.jpg" alt="Madrid" class="city"></a>
             <div class="carousel-caption">
-              <h3>London</h3>
-              <p>Across the Pond</p>
+              <h3>Madrid</h3>
+              <p>Spain/p>
             </div>
           </div>
         </div>
@@ -304,6 +295,49 @@
     </div>
   </div>
 </div>
+<!--Div content -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <div class="block1">
+        <img src="img/vacation.jpg" id="pic1" >
+      </div>
+    </div>
+    <div class="col-sm-5 ">
+      <div class="block2">
+      <img src="img/vacation.jpg" id="pic2">
+  
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3 col-sm-offset-1">
+      <div class="block3">
+      <img src="img/vacation.jpg" id="pic3">
+        
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="block4">
+      <img src="img/vacation.jpg" id="pic4">
+       
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="block5">
+      <img src="img/vacation.jpg" id="pic5">
+       
+      </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid footer">
+  <div class="row">
+    
+  </div>
+  
+</div>
+
 
   <!-- TODO List of hotels that appear according to destination selected  -->
 

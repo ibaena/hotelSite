@@ -123,6 +123,17 @@ var options = {
 
 $("#search").easyAutocomplete(options);
 
+//drop down menu
+$(function(){
+
+    $(".dropdown-menu li a").click(function(){
+
+      $(".btn-default ").text($(this).text());
+      $(".btn-default ").val($(this).text());
+
+   });
+
+});
 
 
  	// FUNCTIONS CALLED

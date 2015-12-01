@@ -145,6 +145,65 @@ body{
 
 }
 
+.footer{
+  width:100%;
+  height:150px;
+
+  bottom:0;
+  background-image: url('../img/darksub.png');
+  margin-top: 60px;
+  color: white;
+  text-align: center;
+
+}
+
+#pic1{
+  max-width:100%;
+max-height:100%;
+
+
+}
+
+#pic2{
+  max-width:100%;
+max-height:100%;
+  text-align: left;
+  margin-right: 50px;
+
+}
+
+#pic3 {
+  max-width:100%;
+max-height:100%;
+}
+
+#pic4 {
+  max-width:100%;
+max-height:100%;
+  margin-left: 12px;
+}
+
+#pic5 {
+  max-width:100%;
+max-height:100%;
+  margin-right: 210px;
+}
+
+
+.block1, .block2{
+
+  margin-top: 150px;
+}
+
+
+.block3, .block4, .block5 {
+
+  margin-top: 40px;
+}
+
+
+
+
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 992px){
