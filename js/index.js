@@ -47,14 +47,20 @@ $(document).ready(function(){
 		var searchInp = $('#search');
 		var checkin = $('#checkin-input');
 		var checkout = $('#checkout-input');
-		var citiesArray = ['paris', 'london', 'new york', 'los angeles'];
+		var citiesArray = ['paris', 'london', 'madrid'];
+		var inputWarning = document.getElementById('input-warning');
+		var warning = document.createElement('p');
 
 		$('#search-button').click(function(e) {
 			e.preventDefault();
 			
 			// if(!searchInp.val() || !checkout.val() || !checkin.val()){
-				// alert('enter correct fields');
-				// return;
+			// 	warning.textContent = "Please fill out all required fields";
+			// 	inputWarning.appendChild(warning);
+			// 	inputWarning.style.display = 'block';
+			// 	return;
+			// }else{
+			// 	inputWarning.style.display = 'none';
 			// }
 
 			for(var i=0; i<citiesArray.length; i++){
@@ -136,7 +142,7 @@ $(document).ready(function(){
 
 //search bar
 var options = {
-	data: ["New York", "London", "Los Angeles","Paris"]
+	data: ["London", "Madrid","Paris"]
 };
 
 $("#search").easyAutocomplete(options);

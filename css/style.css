@@ -32,6 +32,17 @@ body{
   margin-top: 50px;
 }
 
+#input-warning{
+  background: red;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5em;
+  display: none;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
 /* ====  NAV ===== */
 
 #nav-scroller{
