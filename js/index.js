@@ -137,7 +137,7 @@ $(document).ready(function(){
    var options = Date();
 		$('.calendar').pickadate({
   		min: new Date(options)
-		})
+		});
   });
 
 //search bar
