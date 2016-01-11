@@ -9,6 +9,13 @@ body{
  =======================================================*/
 }
 
+.certifiedByAlex {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: lightblue;
+}
+
 .locations {
   text-align: center;
 }
